@@ -12,3 +12,23 @@ function calcularTotal() {
     spanTotal.innerText = valorTotal.toFixed(2);
     }
 btnCalcular.addEventListener("click", calcularTotal);
+
+
+//Alternativa//
+
+/*
+const bill = document.querySelector("#bill");
+const tip = document.querySelector("#tip");
+
+const btnCalculate = document.querySelector("#calculate");
+const total = document.querySelector("#total");
+
+btnCalculate.addEventListener("click",
+    function () {
+        const billValue = parseFloat(bill.value);
+        const tipValue = parseFloat(tip.value);
+        const totalValue = billValue * (1 + tipValue / 100);
+        total.innerText = totalValue.toFixed(2);
+    });
+
+ */
